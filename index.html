@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stone-Paper-Scissors</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@1,300;1,600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <script src="style.js"></script>
+    <div class="wrapper">
+        <div class="scoreboard">
+            <div class="title">
+                <img src="asset/title.png" alt="title of game">
+            </div>
+            <div class="score">
+                <p>SCORE</p>
+                <h1>0</h1>
+            </div>
+        </div>
+        <div class="hands">
+            <div class="hand paper">
+                <img src="asset/Paper_2.png" alt="paper" onclick="pickUserHand('paper')">
+            </div>
+            <div class="hand scissors">
+                <img src="asset/Scissors.png" alt="scissor" onclick="pickUserHand('scissors')">
+            </div>
+            <div class="hand rock"><img src="asset/Rock.png" alt="rock" onclick="pickUserHand('rock')"></div>
+        </div>
+        <div class="contest">
+            <div class="userhand">
+                <h1>YOU PICKED</h1>
+                <div class="handImageContainer">
+                    <img id="userPickImage" src="" alt="">
+                </div>
+            </div>
+            <div class="referee">
+                <div class="decision">
+                    <h1>YOU WIN</h1>
+                </div>
+                <div class="newGame" onclick="playAgain()">Play Again</div>
+            </div>
+            <div class="computerhand">
+                <h1>HOUSE PICKED</h1>
+                <div class="handImageContainer">
+                    <img id="computerPickImage" src="asset/Rock.png" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+
+</body>
+
+</html>
